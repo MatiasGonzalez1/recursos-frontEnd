@@ -97,4 +97,10 @@ body{
   margin: 30px auto;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#btn:hover{
+  box-shadow: 0 10px 30px rgba(62, 96, 249, 0.519);
 }
