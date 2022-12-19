@@ -36,8 +36,8 @@ body{
 
 #card img{
   display: block;
-  width: 180px;
-  max-height: 200px;
+  width: 250px;
+  max-height: 300px;
   position: relative;
   margin: 20px auto;
 }
@@ -79,7 +79,9 @@ body{
 .stats{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 33px;
   text-align: center;
 }
 
