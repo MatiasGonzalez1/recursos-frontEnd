@@ -25,6 +25,7 @@ const card = document.getElementById("card");
 //Se selecciona el elemento con el id "btn"
 const btn = document.getElementById("btn");
 
+//Selecciona aleatoriamente un numero
 let getPokeData = ()=>{
   let id = Math.floor(Math.random() * 21);
   console.log(id)
@@ -38,6 +39,7 @@ let getPokeData = ()=>{
     );
 };
 
+//se genera la tarjeta por medio de los datos de la api
 let generateCard = (data)=>{
   console.log(data)
   const hp = data.stats[0].base_stat;
@@ -58,7 +60,7 @@ let generateCard = (data)=>{
   <h2 class="poke-name">${pokeName}</h2>
   <div class="types"></div>
   <div class="stats">
-    <div>
+    <div> 
       <h3>${statAtack}</h3>
       <p>Attack</p>
     </div>
@@ -84,6 +86,7 @@ let appendTypes = (types) =>{
   });
 };
 
+//se agrega el color de la tarjeta dependiendo del tipo de pokemon
 let styleCard = (color) =>{
   card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #fff 36%)`;
   card.querySelectorAll(".types span").forEach((typeColor)=>{
