@@ -3,6 +3,9 @@
 :root{
   --font-style: 'Nunito Sans', sans-serif;
   --color-blanco: #fff;
+  --color-gris: #cbbddb;
+  --color-lila: #8f7cec;
+  --font-size-1: 16px;
 }
 
 *{
@@ -37,7 +40,7 @@ body{
   position: relative;
   width: 100%;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: var(--font-size-1);
   color: var(--color-blanco);
   margin-bottom: 30px;
   border: none;
@@ -47,5 +50,61 @@ body{
 }
 
 .login-box .user-box label{
-  
+  position: relative;
+  left: 0;
+  top: -60px;
+  padding: 10px 0;
+  font-size: var(--font-size-1);
+  color: var(--color-blanco);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label{
+  top: -85px;
+  left: 0;
+  color: var(--color-lila);
+  font-size: 12px;
+}
+
+#submit{
+  padding: 10px 20px;
+  color: var(--color-gris);
+  font-size: var(--font-size-1); 
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  border: 1px solid var(--color-lila);
+  margin: auto;
+}
+
+#submit:hover{
+  background: var(--color-lila);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--color-lila), 0 0 25px var(--color-lila), 0 0 100px var(--color-lila);
+}
+
+.button-form{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#register{
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--color-gris);
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+#register a{
+  margin: auto;
+  color: var(--color-lila);
+  text-decoration: none;
 }
