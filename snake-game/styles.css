@@ -40,9 +40,53 @@ html, body{
   background-color: #212121;
   color: #00ff80;
   font-weight: bold;
+  border-radius: 5px;
   border: none;
+  box-shadow: 0 5px 20px rgba(28, 223, 6, 0.716);
 }
 
 .title{
   font-size: 16px;
 }
+
+.game {
+  height: 225px;
+  width: 225px;
+  background: #e0e0e0;
+  margin: 0 auto;
+  box-shadow: 0 15px 25px rgba(28, 223, 6, 0.716);
+  border: none;
+}
+
+.tile {
+  float: left;
+  margin: 0;
+  content: "";
+  background: #e0e0e0;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 134, 255, 0.05);
+}
+
+.body {
+  background: #bdbdbd;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+}
+
+.head {
+  background: rgba(9, 77, 1, 0.922) ;
+}
+
+.fruit {
+  background: #00b35a;
+  border-radius: 5px;
+}
+
+.instructions {
+  font-size: 14px;
+  color: #757575;
+  padding-bottom: 20px;
+  text-align: center;
+}  
