@@ -1,0 +1,49 @@
+body {
+
+  background: black;
+
+  display: grid;
+
+  height: 100vh;
+
+  place-items: center;
+
+}
+
+.spinner {
+
+  color: #fff;
+
+}
+
+.spinner:after {
+
+  animation: change .8s linear infinite;
+
+  content: "⠋";
+
+  font-size: 80px;
+
+}
+
+@keyframes change {
+
+  10% { content: "⠙"; }
+
+  20% { content: "⠹"; }
+
+  30% { content: "⠸"; }
+
+  40% { content: "⠼"; }
+
+  50% { content: "⠴"; }
+
+  60% { content: "⠦"; }
+
+  70% { content: "⠧"; }
+
+  80% { content: "⠇"; }
+
+  90% { content: "⠏"; }
+
+}

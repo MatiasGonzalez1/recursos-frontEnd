@@ -52,3 +52,13 @@ console.log(isEven(2))
 
 const goTop = () => window.scrollTo(0, 0);
 goTop();
+
+// 11 - Numeros disponibles
+
+function numerosDisponibles(numeros, solicitado) {
+  if (numeros.indexOf(solicitado) !=-1) {
+    return ( "Felicitaciones, el número " + solicitado + " está disponible");
+  } else {
+    return ("Lo sentimos, el número " + solicitado + " está ocupado, pero aún quedan " + numeros.length + " numeros disponibles" );
+  }
+}
