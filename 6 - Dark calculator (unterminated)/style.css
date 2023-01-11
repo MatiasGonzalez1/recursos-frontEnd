@@ -61,8 +61,7 @@ a{
   width: 30px;
   position: absolute;
   top: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: var(--color-gris-1);
   z-index: -1;
@@ -70,7 +69,7 @@ a{
 
 #display{
   margin: 0 10px;
-  height: 200px;
+  height: 150px;
   width: auto;
   max-width: 270px;
   display: flex;
@@ -145,6 +144,7 @@ button#equal{
 
 .calculator.dark button#clear{
   background-color: #2d191e;
+  color: #bd3740;
 }
 
 .calculator.dark button.btn-number{
@@ -154,6 +154,7 @@ button#equal{
 
 .calculator.dark button.btn-operator{
   background-color: #2e1f39;
+  color: #aa00a4;
 }
 
 .calculator.dark button.btn-equal{
