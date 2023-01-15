@@ -62,3 +62,17 @@ function numerosDisponibles(numeros, solicitado) {
     return ("Lo sentimos, el número " + solicitado + " está ocupado, pero aún quedan " + numeros.length + " numeros disponibles" );
   }
 }
+
+// 12 - Funcion sumar todo
+
+ function sumarTodo(){
+  let suma = 0;
+  for(let i = 0; i < arguments.length; i++){
+    suma += arguments[i];
+  }
+  return suma;
+ }
+
+ let resultado = sumarTodo(1,2,3,4,5);
+
+
