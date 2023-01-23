@@ -1,3 +1,8 @@
+'use strict';
+
+x = 10;
+console.log(x)
+
 class DispositivoEntrada{
   constructor(tipoEntrada, marca){
     this._tipoEntrada = tipoEntrada;
