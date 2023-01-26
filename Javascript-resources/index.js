@@ -76,3 +76,9 @@ function numerosDisponibles(numeros, solicitado) {
  let resultado = sumarTodo(1,2,3,4,5);
 
 
+//13 - Convertir valor de input a mayusculas
+ 
+//Html <input type='text' onchange='convertir(this)'
+function convertir(nombreInput){
+  nombreInput.value = nombreInput.value.toUpperCase();
+}
