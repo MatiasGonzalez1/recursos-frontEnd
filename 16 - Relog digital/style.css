@@ -1,0 +1,21 @@
+#reloj{
+  font-family:monospace;
+  font-size: 60px;
+  text-shadow: 0px 0px 12px #000;
+  color: #fff;
+}
+
+.reloj-contenedor{
+  background-color: #0ca7ce;
+  text-align: center;
+  padding: 15px;
+  max-width: 450px;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 30px #000;
+}
+
+#fecha{
+  letter-spacing: 10px;
+  font-size: 15px;
+}
