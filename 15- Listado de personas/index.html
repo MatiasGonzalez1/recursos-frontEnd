@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Listado de personas</title>
 </head>
-<body onload="mostrarPersonas">
+<body onload="mostrarPersonas()">
   <div class="contenedor" id="cabecero">
     <h1>Listado de Personas</h1>
   </div>
@@ -16,6 +16,12 @@
     <div class="elemento">
       <ul id="personas"></ul>
     </div>
+  </div>
+
+  <div class="contenedor">
+    <div style="text-align: center">
+      <button style="cursor: pointer" onclick="agregarPersona()">+</button>
+    </div>  
   </div>
   <script src="js/persona.js"></script>
   <script src="js/index.js"></script>
