@@ -14,6 +14,8 @@ const mostrarReloj = ()=>{
   let fechaActual = `${diaSemana}, ${dia} ${mes} ${anio}`;
 
   document.getElementById('fecha').innerHTML = fechaActual;
+
+  // document.getElementById('contenedor').classList.toggle('animar');
 }
 //agrega un 0 adelante si es necesario 01/02/03 
 const formatoHora = (hora)=>{

@@ -24,3 +24,7 @@ body{
   letter-spacing: 10px;
   font-size: 15px;
 }
+
+.animar{
+  border: red 1px solid;
+}
