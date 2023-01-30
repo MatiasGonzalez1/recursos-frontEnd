@@ -1,15 +1,15 @@
 class Dato{
-  constructor(desripcion, valor){
-    this._descripcion = desripcion;
+  constructor(descripcion, valor){
+    this._descripcion = descripcion;
     this._valor = valor;
   }
 
-  get desripcion(){
+  get descripcion(){
     return this._descripcion;
   }
 
-  set desripcion(desripcion){
-    this._descripcion = desripcion;
+  set descripcion(descripcion){
+    this._descripcion = descripcion;
   }
 
   get valor(){
@@ -54,11 +54,13 @@ const ingresos = [
 
 const egresos = [
   new Egreso('Alquiler departamento', 1500),
-  new Egreso('Ropa', 400) 
+  new Egreso('Ropa', 100) 
 ];
 
  let cargarApp = ()=>{
-    cargarCabecero()
+    cargarCabecero();
+    cargarIngresos();
+    cargarEgresos();
   }
 
   let totalIngresos=()=>{
@@ -94,3 +96,54 @@ const egresos = [
   const formatoPorcentaje = (valor)=>{
     return valor.toLocaleString('en-US', {style: 'percent', minimumFractionDigits:2})
   }
+
+  const cargarIngresos = ()=>{
+    let ingresosHTML = '';
+    for(let ingreso of ingresos){
+      ingresosHTML += crearIngresoHTML(ingreso);
+    }
+    document.getElementById('lista-ingresos').innerHTML = ingresosHTML;
+  }
+
+  const crearIngresoHTML = ({descripcion, valor})=>{
+    let ingresoHTML = `
+    <div class="elemento limpiarEstilos">
+      <div class="elemento_descripcion">${descripcion}</div>
+      <div class="derecha limpiarEstilos">
+        <div class="elemento_valor">+ ${formatoMoneda(valor)}</div>
+        <div class="elemento_eliminar">
+        <button class="elemento_eliminar--btn">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  `;
+  return ingresoHTML;
+  }
+
+  const cargarEgresos = ()=>{
+    let egresosHTML = '';
+    for(let egreso of egresos){
+      egresosHTML += crearEgresoHTML(egreso);
+    }
+    document.getElementById('lista-egresos').innerHTML = egresosHTML;
+  }
+
+  const crearEgresoHTML = ({descripcion, valor})=>{
+    let egresoHTML = `
+    <div class="elemento limpiarEstilos">
+      <div class="elemento_descripcion">${descripcion}</div>
+      <div class="derecha limpiarEstilos">
+        <div class="elemento_valor">- ${formatoMoneda(valor)}</div>
+        <div class="elemento_porcentaje">${formatoPorcentaje(valor/totalEgresos())}</div>
+        <div class="elemento_eliminar">
+        <button class="elemento_eliminar--btn">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  `;
+  return egresoHTML;
+  };
