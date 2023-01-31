@@ -161,3 +161,24 @@ const egresos = [
     cargarCabecero();
     cargarEgresos();
   }
+
+  let agregarDato = ()=>{
+    //recupera el formulario mediante el id
+    let forma = document.forms['forma'];
+    let tipo = forma['tipo'];
+    let descripcion = forma['descripcion'];
+    let valor = forma['valor'];
+
+    if(descripcion.value !== '' && valor.value !== ''){
+      if(tipo.value === 'ingreso'){
+        ingresos.push(new Ingreso(descripcion.value, Number(valor.value)));
+        cargarCabecero();
+        cargarIngresos();
+      }
+      else if(tipo.value === 'egreso'){
+        egresos.push(new Egreso(descripcion.value, Number(valor.value)));
+        cargarCabecero();
+        cargarEgresos();  
+      }
+    }
+  }
