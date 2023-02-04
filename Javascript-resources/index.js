@@ -1,8 +1,8 @@
 // 1 - Copy to clipboard 
 
-const copyToClipboard = (text) => navigator.clipboard.writeText(text);
+// const copyToClipboard = (text) => navigator.clipboard.writeText(text);
 
-copyToClipboard('Hello world');
+// copyToClipboard('Hello world');
 
 // 2 - Convert RGB to hex
 
@@ -24,7 +24,7 @@ console.log(randomHex)
 
 // 5 - Clear all cookies
 
-const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`));
+// const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`));
 
 // 6 - Find the day of year
 
@@ -50,8 +50,8 @@ console.log(isEven(2))
 
 //10 - Scroll to top
 
-const goTop = () => window.scrollTo(0, 0);
-goTop();
+// const goTop = () => window.scrollTo(0, 0);
+// goTop();
 
 // 11 - Numeros disponibles
 
@@ -82,3 +82,20 @@ function numerosDisponibles(numeros, solicitado) {
 function convertir(nombreInput){
   nombreInput.value = nombreInput.value.toUpperCase();
 }
+
+// 14 - Get year (edad)
+
+let anio = new Date();
+let anioActual = anio.getFullYear();
+
+function getEdad(anioNacimiento){
+  let anio = new Date();
+  let anioActual = anio.getFullYear();
+  // let mesActual = anio.getMonth();
+  // let diaActual = anio.getDay();
+  
+  let edad = anioActual - anioNacimiento;
+  return edad;
+}
+
+console.log(getEdad(1995))
