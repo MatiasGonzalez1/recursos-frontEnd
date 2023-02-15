@@ -54,3 +54,6 @@
 
 18. [Text-hover](https://text-hover.netlify.app/)
 >Hover de texto, relleno con luz de neón.
+
+19. [Typing-effect](https://typping-effect.netlify.app/)
+>Efecto de tipeo maquina de escribir con css
