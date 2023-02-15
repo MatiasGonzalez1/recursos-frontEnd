@@ -52,3 +52,5 @@
 17. [Presupuesto](https://mg-presupuesto.netlify.app/)
 >Aplicacion de presupuesto dinamico
 
+18. [Text-hover](https://text-hover.netlify.app/)
+>Hover de texto, relleno con luz de neón.
