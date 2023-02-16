@@ -50,18 +50,36 @@ let initDelay = 500; //ms
 let particleCount = 20;
 let speedMultiplier = 7;
 
+let createSubFireworks = (x, y, count, speedMultiplier)  =>{
+  let created = 0;
+  let radians = (Math.PI * 2) / count;
+
+    while(created < count){
+      let firework = new Firework(x, y, fireworkRadius, 
+        Math.cos(radians * created) * Math.random() * speedMultiplier,
+        Math.sin(radians * created) * Math.random() * speedMultiplier)
+    }
+
+}
+
 let update = ()=>{
   canvasContext.fillStyle = 'rgba(0,0,0,0.5)'; //tail effect
   canvasContext.fillRect(0,0,canvas.width, canvas.height);
   if(initializeCount < maximumInitialize){
-
+    let firework = new Firework(Math.random() * canvas.width, canvas.height + Math.random() * 70, fireworkRadius, 3 * (Math.random() -0.5), -12)
+  fireworks.push(firework);
+  setTimeout(()=>{
+    initializeCount --
+  }, initDelay)
+  initializeCount ++
   }
   fireworks.forEach((firework, i)=>{
     if(firework.opacity <= 0.1){
-
+      fireworks.splice(i, 1)
+      createSubFireworks()
     }
     else{
-
+      fireworks.update()
     }
   })
 }
