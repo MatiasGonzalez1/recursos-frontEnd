@@ -1,0 +1,67 @@
+body{
+  background-color: #fafafa;
+  height: 100vh;
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+input{
+  all: unset;
+  padding: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  margin-top: 10px;
+  width: 268px;
+  height: 15px;
+}
+
+input::placeholder{
+  color: rgba(0, 0, 0, 0.457);
+}
+
+.display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.left{
+  width: 430px; 
+  height: 700px;
+  background-image: url(https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk);
+  background-repeat: no-repeat;
+}
+
+.left img{
+  position: relative;
+  top: 28px;
+  left: 157px;
+}
+
+.right > form{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+align-items: center;
+justify-content: center;
+width: 350px;
+background-color: #fff;
+border: 1px solid rgb(219, 219, 219);
+padding: 40px;
+margin: 20px;
+}
+
+.right > form > img{
+  width: 200px;
+  height: 70px;
+  padding: 0px 50px 0px 50px  ;
+}
+
+button{
+  background-color: rgba(0, 149, 246, .3);
+}
