@@ -4,19 +4,30 @@ body{
   margin: 0px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
+  box-sizing: border-box;
 }
 
 input{
   all: unset;
   padding: 10px;
   border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
   margin-top: 10px;
   width: 268px;
-  height: 15px;
+  height: 18px;
+  transition: all .5s;
 }
 
-input::placeholder{
-  color: rgba(0, 0, 0, 0.457);
+input:focus::placeholder{
+  position: relative;
+  font-size: 10px;
+  top:-12px;
+  transition: all .5s ease-in-out;
+}
+
+input:focus{
+  border: 1px solid rgb(160, 154, 154);
+
 }
 
 .display{
@@ -42,26 +53,56 @@ input::placeholder{
   left: 157px;
 }
 
-.right > form{
+.right > div{
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 40px;
+  margin: 20px;
+}
+
+.right form{
 display: flex;
 flex-direction: column;
 flex-wrap: nowrap;
 align-content: center;
 align-items: center;
 justify-content: center;
-width: 350px;
-background-color: #fff;
-border: 1px solid rgb(219, 219, 219);
-padding: 40px;
-margin: 20px;
+
 }
 
-.right > form > img{
+.right img{
   width: 200px;
   height: 70px;
   padding: 0px 50px 0px 50px  ;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 
 button{
-  background-color: rgba(0, 149, 246, .3);
+  background-color: rgba(0, 149, 246);
+  width: 280px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px 8px;
+  cursor: pointer;
+}
+
+.sep{
+  display: flex;
+  justify-content: center;
+}
+.line{
+  border-top: 1px solid rgba(160, 154, 154, 0.494);
+  width: 120px;
+  position: relative;
+  top: 14px;
+}
+
+.sep p{
+  color:rgba(160, 154, 154, 0.494);
+  font-size: 15px;
+  margin: 5px;
 }
