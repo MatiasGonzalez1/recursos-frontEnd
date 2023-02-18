@@ -12,9 +12,9 @@ input{
   padding: 10px;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 268px;
-  height: 18px;
+  height: 15px;
   transition: all .5s;
 }
 
@@ -37,12 +37,12 @@ input:focus{
   align-content: center;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .left{
   width: 430px; 
-  height: 650px;
+  height: 700px;
   background-image: url(https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk);
   background-repeat: no-repeat;
   margin-top: 60px;
@@ -58,7 +58,7 @@ input:focus{
   width: 280px;
   background-color: #fff;
   border: 1px solid rgb(219, 219, 219);
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
   margin: 20px;
 }
 
@@ -73,7 +73,7 @@ justify-content: center;
 }
 
 .right .i{
-  width: 200px;
+  width: 180px;
   height: 70px;
   padding: 0px 50px 0px 50px  ;
   cursor: pointer;
@@ -85,9 +85,9 @@ button{
   width: 280px;
   color: rgb(255, 255, 255);
   border: none;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 10px;
-  margin: 20px 8px;
+  margin: 15px 8px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -104,7 +104,7 @@ button{
 }
 
 .sep p{
-  color:rgba(160, 154, 154, 0.494);
+  color:rgba(145, 139, 139, 0.745);
   font-size: 15px;
   margin: 5px;
 }
@@ -149,7 +149,6 @@ align-content: center;
 align-items: center;
 justify-content: center;
 padding: 10px 40px;
-
 }
 
 .ult p{
@@ -162,4 +161,28 @@ padding: 10px 40px;
   color: rgba(0, 149, 246);
   font-size: 15px;
   font-weight: bold;
+}
+
+.final{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  padding: 0px 40px !important;
+  margin: 5px !important;
+}
+
+.final p{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+.final img{
+  margin: 5px;
+  width: 120px;
+  height: 40px;
 }
