@@ -37,14 +37,15 @@ input:focus{
   align-content: center;
   align-items: center;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 10px;
 }
 
 .left{
   width: 430px; 
-  height: 700px;
+  height: 650px;
   background-image: url(https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk);
   background-repeat: no-repeat;
+  margin-top: 60px;
 }
 
 .left img{
@@ -54,7 +55,7 @@ input:focus{
 }
 
 .right > div{
-  width: 350px;
+  width: 280px;
   background-color: #fff;
   border: 1px solid rgb(219, 219, 219);
   padding: 40px;
@@ -71,7 +72,7 @@ justify-content: center;
 
 }
 
-.right img{
+.right .i{
   width: 200px;
   height: 70px;
   padding: 0px 50px 0px 50px  ;
@@ -87,6 +88,7 @@ button{
   border-radius: 25px;
   padding: 10px;
   margin: 20px 8px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -98,11 +100,66 @@ button{
   border-top: 1px solid rgba(160, 154, 154, 0.494);
   width: 120px;
   position: relative;
-  top: 14px;
+  top: 13px;
 }
 
 .sep p{
   color:rgba(160, 154, 154, 0.494);
   font-size: 15px;
   margin: 5px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 15px;
+
+}
+
+section .f{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+section a{
+  text-decoration: none;
+  color: #3b5998;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+section a.forgot{
+  text-align: center;
+  width: 80%;
+  color: #3b5998;
+  font-size: 13px;
+  margin-top: 20px;
+  font-weight: normal;
+  letter-spacing: .5px;
+}
+
+div.ult{
+display: flex;
+flex-wrap: nowrap;
+align-content: center;
+align-items: center;
+justify-content: center;
+padding: 10px 40px;
+
+}
+
+.ult p{
+  font-size: 15px;
+  margin-right: 3px;
+}
+
+.ult a{
+  text-decoration: none;
+  color: rgba(0, 149, 246);
+  font-size: 15px;
+  font-weight: bold;
 }
