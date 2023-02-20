@@ -1,0 +1,77 @@
+:root{
+  --withe: #f1f1f1;
+}
+
+body{
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 40px;
+  color: var(--withe);
+  letter-spacing: 0.7em;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div > span{
+  opacity: .15;
+}
+
+#I{
+  opacity: 1;
+  animation: flickerI 2s linear reverse infinite;
+}
+
+#I::after{
+  content: '';
+  width: 150%;
+  box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+}
+
+@keyframes flickerI {
+  0%{
+    opacity: .4;
+  }  
+  5%{
+    opacity: .5;
+  }
+  10%{
+    opacity: .6;
+  }  
+  15%{
+    opacity: .85;
+  }
+  25%{
+    opacity: .5;
+  }  
+  30%{
+    opacity: 1;
+  }
+  35%{
+    opacity: .1;
+  }  
+  40%{
+    opacity: .25;
+  }
+  45%{
+    opacity: .5;
+  }
+  60%{
+    opacity: 1;
+  }
+  70%{
+    opacity: .85;
+  }
+  80%{
+    opacity: .4;
+  }
+  90%{
+    opacity: .5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
