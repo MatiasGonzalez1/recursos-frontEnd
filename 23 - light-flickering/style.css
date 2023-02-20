@@ -1,5 +1,6 @@
 :root{
   --withe: #f1f1f1;
+  --red: #700707;
 }
 
 body{
@@ -31,6 +32,39 @@ div > span{
   box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
 }
 
+#L, #G{
+  animation: flickerG 2s linear reverse infinite;
+  position: relative;
+}
+
+#L::after, #L::before{
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: var(--withe);
+  position: absolute;
+  top: -50%;
+  left: 90%;
+  border-radius: 100%;
+  opacity: .5;
+  filter: blur(10px);
+}
+
+#L::after{
+  width: 200px;
+  height: 200px;
+  top: -150%;
+  left: -5%;
+  opacity: .1;
+  filter: blur(10px);
+}
+
+#H{
+  animation: flickerH 2s linear reverse infinite;
+}
+#T{
+  animation: flickerT 2s linear reverse infinite;
+}
 @keyframes flickerI {
   0%{
     opacity: .4;
@@ -75,3 +109,140 @@ div > span{
     opacity: 1;
   }
 }
+
+@keyframes flickerG {
+  0%{
+    opacity: .19;
+  }  
+  5%{
+    opacity: .2;
+  }
+  10%{
+    opacity: .25;
+  }  
+  15%{
+    opacity: .35;
+  }
+  25%{
+    opacity: .2;
+  }  
+  30%{
+    opacity: .4;
+  }
+  35%{
+    opacity: .1;
+  }  
+  40%{
+    opacity: .25;
+  }
+  45%{
+    opacity: .2;
+  }
+  60%{
+    opacity: .4;
+  }
+  70%{
+    opacity: .35;
+  }
+  80%{
+    opacity: .4;
+  }
+  90%{
+    opacity: .2;
+  }
+  100%{
+    opacity: .4;
+  }
+}
+
+@keyframes flickerH {
+  0%{
+    opacity: .15;
+  }  
+  5%{
+    opacity: .2;
+  }
+  10%{
+    opacity: .12;
+  }  
+  15%{
+    opacity: .2;
+  }
+  25%{
+    opacity: .15;
+  }  
+  30%{
+    opacity: .4;
+  }
+  35%{
+    opacity: .05;
+  }  
+  40%{
+    opacity: .12;
+  }
+  45%{
+    opacity: .15;
+  }
+  60%{
+    opacity: .3;
+  }
+  70%{
+    opacity: .2;
+  }
+  80%{
+    opacity: .3;
+  }
+  90%{
+    opacity: .18;
+  }
+  100%{
+    opacity: .3;
+  }
+}
+
+@keyframes flickerT {
+  0%{
+    opacity: .01;
+  }  
+  5%{
+    opacity: .05;
+  }
+  10%{
+    opacity: .03;
+  }  
+  15%{
+    opacity: .01;
+  }
+  25%{
+    opacity: .07;
+  }  
+  30%{
+    opacity: .01;
+  }
+  35%{
+    opacity: .05;
+  }  
+  40%{
+    opacity: .06;
+  }
+  45%{
+    opacity: .1;
+  }
+  60%{
+    opacity: 0.;
+  }
+  70%{
+    opacity: .1;
+  }
+  80%{
+    opacity: 0.;
+  }
+  90%{
+    opacity: 0.0;
+  }
+  100%{
+    opacity: .1;
+  }
+}
+
+
