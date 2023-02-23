@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #39ff14;
+  --color-2: #ff44cc;
+  --color-3: #0ff0fc;
+  --color-4: #f9002f;
+  --color-5: #8a2be2;
+}
+
+.wrapper {
+  background-color: #000;
+  line-height: 1;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 16px);
+}
+
+h1 {
+  font-family: "Exo", sans-serif;
+  font-size: 9vw;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  text-transform: uppercase;
+  background: linear-gradient(
+    219deg,
+    var(--color-1)19%,
+    transparent 19%,
+    transparent 20%,
+    var(--color-2) 39%,
+    transparent 39%,
+    transparent 40%,
+    var(--color-3) 59%,
+    transparent 59%,
+    transparent 60%,
+    var(--color-4) 79%,
+    transparent 79%,
+    transparent 80%,
+    var(--color-5) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h1:hover{
+  background: linear-gradient(
+    219deg,
+    var(--color-5) 19%,
+    transparent 19%,
+    transparent 20%,
+    var(--color-4) 39%,
+    transparent 39%,
+    transparent 40%,
+    var(--color-3) 59%,
+    transparent 59%,
+    transparent 60%,
+    var(--color-2) 79%,
+    transparent 79%,
+    transparent 80%,
+    var(--color-1)
+     80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  -webkit-box-shadow: 11px 10px 68px 14px rgba(255,255,255,1);
+-moz-box-shadow: 11px 10px 68px 14px rgba(255,255,255,1);
+box-shadow: 11px 10px 68px 14px rgba(255,255,255,1);
+border-radius: 25px;
+transition: all 1s ease-out;
+}
+
+.container {
+  padding: 1rem;
+  text-align: center;
+  background: radial-gradient(
+      circle at 1.4% 1.4%,
+      var(--color-1) 0.8%,
+      transparent 0.8%
+    ),
+    radial-gradient(circle at 5.5% 3%, var(--color-2) 0.45%, transparent 0.45%),
+    radial-gradient(circle at 2.5% 3.5%, var(--color-3) 0.5%, transparent 0.5%),
+    radial-gradient(
+      circle at 4.5% 1.2%,
+      var(--color-4) 0.25%,
+      transparent 0.25%
+    ),
+    radial-gradient(circle at 98% 98%, var(--color-1) .8%, transparent .8%);
+}
