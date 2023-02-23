@@ -96,3 +96,23 @@ transition: all 1s ease-out;
     ),
     radial-gradient(circle at 98% 98%, var(--color-1) .8%, transparent .8%);
 }
+
+@media screen and (max-width: 760px){
+  h1{
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 360px){
+  h1{
+    font-size: 4rem;
+  }
+}
+
+
