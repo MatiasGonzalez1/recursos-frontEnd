@@ -160,3 +160,8 @@ button#equal{
 .calculator.dark button.btn-equal{
   background-color: #223323;
 }
+
+.toggler-icon{
+  text-align: center;
+  margin-left: -5px;
+}
