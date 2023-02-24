@@ -25,7 +25,10 @@ aside .tw{
   position: relative;
   top: 10px;
   margin-bottom: 20px;
+}
 
+nav ul{
+  width: 180px;
 }
 
 nav li{
@@ -48,4 +51,20 @@ nav li:hover a{
 
 nav li:hover svg{
   stroke: aqua;
+  animation: rotate 2s;
+}
+
+@keyframes rotate{
+  0%{
+    transform: translateX(0);
+    transform: rotateX(0);
+  }
+  50%{
+    transform: translateX(5px);
+    transform: rotateX(360deg);
+
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
