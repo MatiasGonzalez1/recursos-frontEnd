@@ -1,0 +1,32 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414;
+}
+
+#mainPhoto{
+  width: 518px;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.imgCarousel{
+  width: 100px;
+  height: 100px;
+  transition: .3s;
+  text-align: center;
+}
+
+.imgCarousel:hover{
+  width: 110px;
+  height: 110px;
+  border: 2px solid #fff;
+}
+
+img{
+  border-radius: 10px;
+  cursor: pointer;
+}
