@@ -13,4 +13,100 @@ body{
   background-color: #111124;
 }
 
-.sign{}
+.sign{
+  position: relative;
+  background: none;
+  color: #303030;
+  font-size: 5rem;
+  display: inline-block;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#one{
+  animation: flicker-n_2 10s infinite forwards;
+}
+
+#three{
+  -webkit-animation: flicker-0 10s infinite linear;
+  -moz-animation: flicker-0 10s infinite linear;
+  animation: color-change 10s infinite forwards;
+}
+
+#three::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f84aa7;
+  border-radius: 50%;
+  filter: blur(2em);
+  opacity: 0;
+  animation: color-change 10s infinite linear;
+  animation: change-op 10s infinite linear;
+}
+
+#three::after{
+  content: '';
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1em;
+  background: radial-gradient(#111124 30%, #f84aa7, #ffc8e6);
+  transform: perspective(1em) rotateX(80deg) translateY(100%);
+  filter: blur(5px);
+  animation: change-op 10s infinite linear;
+}
+
+#two{
+  transition: 0s;
+  animation: flicker-e 10s infinite linear;
+}
+
+#four{
+  animation: flicker-n 10s infinite linear;
+}
+
+@keyframes flicker-n {
+  0%,
+  4%,
+  6%,
+  9%,
+  11%,
+  29%,
+  41%,
+  54%,
+  76%,
+  78%,
+  89%,
+  91%,
+  93%,
+  95%,
+  100%{
+    background: #303030;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  5%,
+  10%,
+  30%,
+  40%,
+  55%,
+  77%,
+  90%,
+  92%,
+  94%{
+    background: linear-gradient(90deg, #ffb8de, #272727);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
